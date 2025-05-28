@@ -1,0 +1,77 @@
+V "GNAT Lib v12"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -fchecking=1
+A -g
+A -gnatp
+A -gnatg
+A -gnatn
+A -fPIC
+A -mfloat-abi=hard
+A -mtls-dialect=gnu
+A -marm
+A -mlibarch=armv6+fp
+A -march=armv6+fp
+P ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+
+U system.task_primitives%s  s-taspri.ads	d1d6a9cb NE OL PR PK
+W system%s		system.ads		system.ali
+W system.os_interface%s	s-osinte.adb		s-osinte.ali
+
+D ada.ads		20220819080952 76789da1 ada%s
+D a-unccon.ads		20220819080952 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20220819080952 edec285f interfaces%s
+D i-c.ads		20220819080952 2284bf7c interfaces.c%s
+D system.ads		20220819080952 532fc697 system%s
+D s-exctab.ads		20220819080952 91bef6ef system.exception_table%s
+D s-linux.ads		20220819080952 34850a8c system.linux%s
+D s-oscons.ads		20230119203625 c397eef4 system.os_constants%s
+D s-osinte.ads		20220819080952 e4f53740 system.os_interface%s
+D s-parame.ads		20220819080952 d494a4a6 system.parameters%s
+D s-stalib.ads		20220819080952 1c9580f6 system.standard_library%s
+D s-taspri.ads		20220819080952 660c581c system.task_primitives%s
+D s-unstyp.ads		20220819080952 fa2a7f59 system.unsigned_types%s
+G a e
+G c Z s s [lockIP system__task_primitives 74 9 none]
+G c Z s s [suspension_objectIP system__task_primitives 79 9 none]
+G c Z s s [private_dataIP system__task_primitives 96 9 none]
+X 4 i-c.ads
+66M9*unsigned_long
+X 5 system.ads
+37K9*System 155e11 12|38r6 40r9 63r28 72r25 76r20 92r20 97r24 105r21 110r20
+. 117r5
+67M9*Address 12|63r35 105r28
+X 9 s-osinte.ads
+46K16*OS_Interface 685e24 12|38w13 72r32 76r27 92r27 97r31 110r27
+298M9*pthread_t<4|66M9> 12|97r44
+304R9*pthread_mutex_t 661e14 12|72r45
+305R9*pthread_rwlock_t 673e14 12|76r40
+306R9*pthread_cond_t 679e14 12|92r40 110r40
+X 12 s-taspri.ads
+40K16*Task_Primitives 5|37k9 12|72E9 117l12 117e27
+43R9*Lock 74c9 77e14
+46R9*RTS_Lock<9|304R9> 72c9 75r20 89r19 113r19
+51R9*Suspension_Object 79c9 94e14
+54P9*Task_Body_Access
+58R9*Private_Data 96c9 115e14
+63M12*Task_Address{5|67M9}
+64N4*Task_Address_Size
+67N4*Alternate_Stack_Size
+75r7*WO{46R9}
+76r7*RW{9|305R9}
+80b7*State{boolean}
+86b7*Waiting{boolean}
+89r7*L{46R9}
+92r7*CV{9|306R9}
+97m7*Thread{9|298M9}
+105m7*LWP{5|67M9}
+110r7*CV{9|306R9}
+113r7*L{46R9}
+

@@ -1,0 +1,31 @@
+V "GNAT Lib v12"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -fchecking=1
+A -g
+A -gnatp
+A -gnatg
+A -gnatn
+A -fPIC
+A -mfloat-abi=hard
+A -mtls-dialect=gnu
+A -marm
+A -mlibarch=armv6+fp
+A -march=armv6+fp
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RR NO_ELABORATION_CODE
+
+U ada%s			ada.ads			76789da1 NE OL PU PK
+
+D ada.ads		20220819080952 76789da1 ada%s
+D system.ads		20220819080952 532fc697 system%s
+G a e
+X 1 ada.ads
+16K9*Ada 20l5 20e8
+

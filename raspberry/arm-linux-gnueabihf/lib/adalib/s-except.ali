@@ -1,0 +1,49 @@
+V "GNAT Lib v12"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -fchecking=1
+A -g
+A -gnatp
+A -gnatg
+A -gnatn
+A -fPIC
+A -mfloat-abi=hard
+A -mtls-dialect=gnu
+A -marm
+A -mlibarch=armv6+fp
+A -march=armv6+fp
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+
+U system.exceptions%s	s-except.ads		618a79a5 EE OL PR PK
+W system%s		system.ads		system.ali
+Z system.exception_table%s  s-exctab.adb	s-exctab.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+
+D ada.ads		20220819080952 76789da1 ada%s
+D a-except.ads		20220819080952 2a7d8d70 ada.exceptions%s
+D a-unccon.ads		20220819080952 0e9b276f ada.unchecked_conversion%s
+D system.ads		20220819080952 532fc697 system%s
+D s-exctab.ads		20220819080952 91bef6ef system.exception_table%s
+D s-exctab.adb		20220819080952 89d79d5b system.exception_table%b
+D s-except.ads		20220819080952 32a5bf32 system.exceptions%s
+D s-parame.ads		20220819080952 d494a4a6 system.parameters%s
+D s-secsta.ads		20220819080952 62cd9202 system.secondary_stack%s
+D s-soflin.ads		20220819080952 df77073e system.soft_links%s
+D s-stache.ads		20220819080952 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20220819080952 1c9580f6 system.standard_library%s
+D s-stoele.ads		20220819080952 6d8e1ff4 system.storage_elements%s
+D s-traent.ads		20220819080952 c81cbf8c system.traceback_entries%s
+G a e
+X 4 system.ads
+37K9*System 155e11 7|32r9 44r5
+X 7 s-except.ads
+32K16*Exceptions 4|37k9 7|39E4 44l12 44e22
+39X4 Foreign_Exception 40r25
+

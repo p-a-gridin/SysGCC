@@ -1,0 +1,10 @@
+prefix=/usr
+includedir=${prefix}/include
+
+metadatadir=/usr/share/wf-panel-pi/metadata
+sysconfdir=/etc
+
+Name: wf-panel-pi
+Description: Raspberry Pi GTK3 panel for Wayfire
+Version: 0.8.0
+Cflags: -I${includedir}

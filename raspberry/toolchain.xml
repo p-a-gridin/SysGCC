@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<Toolchain xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ToolchainName>Raspberry PI</ToolchainName>
+  <ToolchainType>Linux</ToolchainType>
+  <PathDetectionKeyStrip>0</PathDetectionKeyStrip>
+  <GNUTargetID>arm-linux-gnueabihf</GNUTargetID>
+  <ToolchainID>com.visualgdb.raspberry_pi</ToolchainID>
+  <BinaryDirectory>bin</BinaryDirectory>
+  <Prefix>arm-linux-gnueabihf-</Prefix>
+  <Make>make.exe</Make>
+  <IsCygwinBased>false</IsCygwinBased>
+  <GCCVersion>12.2.0</GCCVersion>
+  <GDBVersion>13.1</GDBVersion>
+  <BinutilsVersion>2.40</BinutilsVersion>
+  <LIBCVersion></LIBCVersion>
+  <Revision>2</Revision>
+  <RelativeSysrootPath>arm-linux-gnueabihf\sysroot</RelativeSysrootPath>
+  <Comments>Raspbian Bookworm</Comments>
+  <CompatibleSDCardImage>https://downloads.raspberrypi.com/raspios_armhf/images/raspios_armhf-2024-07-04/2024-07-04-raspios-bookworm-armhf.img.xz</CompatibleSDCardImage>
+  <TargetVersionCheckCommand>lsb_release -c</TargetVersionCheckCommand>
+  <TargetVersionCheckRegex>Codename:[ \t]+bookworm</TargetVersionCheckRegex>
+</Toolchain>

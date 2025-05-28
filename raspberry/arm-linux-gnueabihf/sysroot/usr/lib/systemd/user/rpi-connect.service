@@ -1,0 +1,16 @@
+[Unit]
+Description=Raspberry Pi Connect
+After=rpi-connect-wayvnc.service
+Wants=rpi-connect-wayvnc.service
+
+[Service]
+Type=notify
+ExecStart=/usr/bin/rpi-connect-start
+RestartSec=2
+Restart=on-failure
+NotifyAccess=all
+KillMode=process
+SyslogIdentifier=rpi-connect
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,10 @@
+prefix=/usr
+includedir=${prefix}/include
+libdir=${prefix}/lib/arm-linux-gnueabihf
+
+Name: libliftoff_rpi
+Description: KMS plane library for Raspberry Pi
+Version: 0.0.4-dev
+Requires.private: libdrm
+Libs: -L${libdir} -lliftoff_rpi
+Cflags: -I${includedir}

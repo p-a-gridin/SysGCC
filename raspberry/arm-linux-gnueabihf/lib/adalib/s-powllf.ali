@@ -1,0 +1,36 @@
+V "GNAT Lib v12"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -fchecking=1
+A -g
+A -gnatp
+A -gnatg
+A -gnatn
+A -fPIC
+A -mfloat-abi=hard
+A -mtls-dialect=gnu
+A -marm
+A -mlibarch=armv6+fp
+A -march=armv6+fp
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+
+U system.powten_llf%s	s-powllf.ads		6c24e694 NE OL PU PK
+W system%s		system.ads		system.ali
+
+D system.ads		20220819080952 532fc697 system%s
+D s-powllf.ads		20220819080952 3f0b2003 system.powten_llf%s
+G a e
+X 1 system.ads
+37K9*System 155e11 2|34r9 103r5
+X 2 s-powllf.ads
+34K16*Powten_LLF 1|37k9 2|103l12 103e22
+37N4*Maxpow_Exact 43r25
+43N4*Maxpow
+46a4*Powten(long_long_float)
+

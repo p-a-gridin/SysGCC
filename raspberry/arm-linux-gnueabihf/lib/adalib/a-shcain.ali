@@ -1,0 +1,84 @@
+V "GNAT Lib v12"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -fchecking=1
+A -g
+A -gnatp
+A -gnatg
+A -gnatn
+A -fPIC
+A -mfloat-abi=hard
+A -mtls-dialect=gnu
+A -marm
+A -mlibarch=armv6+fp
+A -march=armv6+fp
+P SS ZX
+
+RN
+RV NO_SECONDARY_STACK
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U ada.strings.hash_case_insensitive%b  a-shcain.adb  433da570 NE OL PU SU
+W ada%s			ada.ads			ada.ali
+W ada.characters%s	a-charac.ads		a-charac.ali
+W ada.characters.handling%s  a-chahan.adb	a-chahan.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W system%s		system.ads		system.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.string_hash%s	s-strhas.adb		s-strhas.ali
+
+U ada.strings.hash_case_insensitive%s  a-shcain.ads  f9e6d5c1 NE OL PU SU
+W ada%s			ada.ads			ada.ali
+W ada.containers%s	a-contai.ads		a-contai.ali
+W ada.strings%s		a-string.ads		a-string.ali
+
+D ada.ads		20220819080952 76789da1 ada%s
+D a-charac.ads		20220819080952 2d3ec45b ada.characters%s
+D a-chahan.ads		20220819080952 bbd5c0b9 ada.characters.handling%s
+D a-chahan.adb		20220819080952 96cadc18 ada.characters.handling%b
+D a-chlat1.ads		20220819080952 e0d72e76 ada.characters.latin_1%s
+D a-contai.ads		20220819080952 61e5e089 ada.containers%s
+D a-string.ads		20220819080952 90ac6797 ada.strings%s
+D a-shcain.ads		20220819080952 08af52df ada.strings.hash_case_insensitive%s
+D a-shcain.adb		20220819080952 d6dbef82 ada.strings.hash_case_insensitive%b
+D a-strmap.ads		20220819080952 233229cd ada.strings.maps%s
+D a-stmaco.ads		20220819080952 4b1f2a0b ada.strings.maps.constants%s
+D a-unccon.ads		20220819080952 0e9b276f ada.unchecked_conversion%s
+D system.ads		20220819080952 532fc697 system%s
+D s-exctab.ads		20220819080952 91bef6ef system.exception_table%s
+D s-parame.ads		20220819080952 d494a4a6 system.parameters%s
+D s-secsta.ads		20220819080952 62cd9202 system.secondary_stack%s
+D s-stalib.ads		20220819080952 1c9580f6 system.standard_library%s
+D s-stoele.ads		20220819080952 6d8e1ff4 system.storage_elements%s
+D s-strhas.ads		20220819080952 269cd894 system.string_hash%s
+D s-strhas.adb		20220819080952 398666ac system.string_hash%b
+D s-unstyp.ads		20220819080952 fa2a7f59 system.unsigned_types%s
+G a e
+G c Z s b [hash_case_insensitive ada__strings 32 22 none]
+X 1 ada.ads
+16K9*Ada 20e8 8|30r6 32r10 34r14 9|30r6 30r35 33r10 36r8 41r5
+X 2 a-charac.ads
+16K13*Characters 18e19 9|30r10 30r39
+X 3 a-chahan.ads
+43K24*Handling 453e28 9|30w21 30r50
+273V13*To_Lower{string} 9|40s17
+X 6 a-contai.ads
+16K13*Containers 28e19 8|30w10 33r25 9|34r25 36r12
+19M9*Hash_Type 8|33r36 9|34r36 38r26
+X 7 a-string.ads
+16K13*Strings 35e16 8|32r14 34r18 9|33r14 41r9
+X 8 a-shcain.ads
+32V22*Hash_Case_Insensitive{6|19M9} 7|16k13 8|33>4 34r26 9|33b22 41l17 41t38
+33a4 Key{string} 9|34b4 40r27
+X 9 a-shcain.adb
+37V13 Hash[19|60]{6|19M9} 40s11 20|42b13
+X 13 system.ads
+37K9*System 9|31r6 37r25 13|155e11
+X 19 s-strhas.ads
+45K16*String_Hash 9|31w13 37r32 19|64e23
+60v13*Hash 9|37r44
+

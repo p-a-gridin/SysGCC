@@ -1,0 +1,86 @@
+V "GNAT Lib v12"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -fchecking=1
+A -g
+A -gnatp
+A -gnatg
+A -gnatn
+A -fPIC
+A -mfloat-abi=hard
+A -mtls-dialect=gnu
+A -marm
+A -mlibarch=armv6+fp
+A -march=armv6+fp
+P ZX
+
+RN
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+
+U system.task_info%b	s-tasinf.adb		4ee862d1 NE OL PK
+W system%s		system.ads		system.ali
+
+U system.task_info%s	s-tasinf.ads		e5572fa3 EB EE OL PR PK
+W system%s		system.ads		system.ali
+Z system.exception_table%s  s-exctab.adb	s-exctab.ali
+W system.os_interface%s	s-osinte.adb		s-osinte.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+
+D ada.ads		20220819080952 76789da1 ada%s
+D a-except.ads		20220819080952 2a7d8d70 ada.exceptions%s
+D a-unccon.ads		20220819080952 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20220819080952 edec285f interfaces%s
+D i-c.ads		20220819080952 2284bf7c interfaces.c%s
+D system.ads		20220819080952 532fc697 system%s
+D s-exctab.ads		20220819080952 91bef6ef system.exception_table%s
+D s-exctab.adb		20220819080952 89d79d5b system.exception_table%b
+D s-linux.ads		20220819080952 34850a8c system.linux%s
+D s-oscons.ads		20230119203625 c397eef4 system.os_constants%s
+D s-osinte.ads		20220819080952 e4f53740 system.os_interface%s
+D s-parame.ads		20220819080952 d494a4a6 system.parameters%s
+D s-secsta.ads		20220819080952 62cd9202 system.secondary_stack%s
+D s-soflin.ads		20220819080952 df77073e system.soft_links%s
+D s-stache.ads		20220819080952 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20220819080952 1c9580f6 system.standard_library%s
+D s-stoele.ads		20220819080952 6d8e1ff4 system.storage_elements%s
+D s-tasinf.ads		20220819080952 528dde74 system.task_info%s
+D s-tasinf.adb		20220819080952 1c65bca5 system.task_info%b
+D s-traent.ads		20220819080952 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20220819080952 fa2a7f59 system.unsigned_types%s
+G a e
+G c Z s s [thread_attributesIP system__task_info 89 9 none]
+G c Z s b [number_of_processors system__task_info 99 13 none]
+X 5 i-c.ads
+57I9*long<integer>
+X 6 system.ads
+37K9*System 155e11 18|44r6 46r9 80r23 102r5 19|34r14 55r5
+X 11 s-osinte.ads
+46K16*OS_Interface 685e24 18|44w13 80r30 19|49r13 49r35
+59I12*long{5|57I9}
+249V13*sysconf{59I12} 19|49s26
+253N4*SC_NPROCESSORS_ONLN 19|49r48
+567A9*bit_field(boolean)<integer>
+572R9*cpu_set_t 574e14 18|80r43
+573a7*bits{567A9} 18|82m35 83m35
+X 18 s-tasinf.ads
+46K16*Task_Info 6|37k9 18|47r24 102l12 102e21 19|34b21 55l12 55t21
+80R12*CPU_Set{11|572R9} 82r23 83r23 90r30
+82r4*Any_CPU{80R12} 90r41
+83r4*No_CPU{80R12}
+85X4*Invalid_CPU_Number
+89R9*Thread_Attributes 91e14 93r41 95r38
+90r7*CPU_Affinity{80R12}
+93r4*Default_Thread_Attributes{89R9}
+95P9*Task_Info_Type(89R9) 97r37
+97p4*Unspecified_Task_Info{95P9}
+99V13*Number_Of_Processors{positive} 19|45b13 53l8 53t28
+X 19 s-tasinf.adb
+36i4 N_CPU{natural} 37r19 47r10 48m10 52r14
+

@@ -1,0 +1,32 @@
+V "GNAT Lib v12"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -fchecking=1
+A -g
+A -gnatp
+A -gnatg
+A -gnatn
+A -fPIC
+A -mfloat-abi=hard
+A -mtls-dialect=gnu
+A -marm
+A -mlibarch=armv6+fp
+A -march=armv6+fp
+P ZX
+
+RN
+
+U system.dim%s		s-dim.ads		bf1fb15b NE OL PU PK
+W system%s		system.ads		system.ali
+
+D system.ads		20220819080952 532fc697 system%s
+D s-dim.ads		20220819080952 ec3077cc system.dim%s
+G a e
+X 1 system.ads
+37K9*System 155e11 2|65r9 68r5
+X 2 s-dim.ads
+65K16*Dim 1|37k9 2|68l12 68e15
+
