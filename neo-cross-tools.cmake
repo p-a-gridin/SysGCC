@@ -28,4 +28,5 @@ include_directories(C:/SysGCC/nanopi-neo/include)
 
 # иногда не работает: link_directories(C:/SysGCC/nanopi-neo/lib)
 list(APPEND TBB_LIBS C:/SysGCC/nanopi-neo/lib/libtbb.so C:/SysGCC/nanopi-neo/lib/libtbbmalloc.so)
+list(APPEND MODBUS_LIB C:/SysGCC/nanopi-neo/lib/libmodbus.so.5)
 
