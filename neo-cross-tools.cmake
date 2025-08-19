@@ -30,3 +30,7 @@ include_directories(C:/SysGCC/nanopi-neo/include)
 list(APPEND TBB_LIBS C:/SysGCC/nanopi-neo/lib/libtbb.so C:/SysGCC/nanopi-neo/lib/libtbbmalloc.so)
 list(APPEND MODBUS_LIB C:/SysGCC/nanopi-neo/lib/libmodbus.so.5)
 
+file(GLOB files ${CMAKE_CURRENT_LIST_DIR}/nanopi-neo/lib/libsfml*)
+list(APPEND SFML_LIBS ${files})
+
+
