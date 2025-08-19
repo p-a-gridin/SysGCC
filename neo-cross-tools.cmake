@@ -33,4 +33,7 @@ list(APPEND MODBUS_LIB C:/SysGCC/nanopi-neo/lib/libmodbus.so.5)
 file(GLOB files ${CMAKE_CURRENT_LIST_DIR}/nanopi-neo/lib/libsfml*)
 list(APPEND SFML_LIBS ${files})
 
+file(GLOB files ${CMAKE_CURRENT_LIST_DIR}/nanopi-neo/lib/libtgui*)
+list(APPEND TGUI_LIBS ${files})
+
 
